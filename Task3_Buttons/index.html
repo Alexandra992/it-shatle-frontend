@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="./styles/form.css">
 </head>
 <body>
-    <div class="wrapper">
 <h1 class="page-heading"> Forms </h1> 
+<main class="main">
 <form class="form" name="primaryForm" id="primaryForm">
-<div class="form-group">
-    <div class="form-control">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-input" name="name" id="name">
-    </div>
+    <div class="form-group">
+        <div class="form-control">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-input" name="name" id="name">
+        </div>
 
-    <div class="form-control">
-        <label for="lastName" class="form-label">Last name</label>
-        <input type="text" class="form-input" name="LastName" id="LastName">
+        <div class="form-control">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-input" name="LastName" id="LastName">
+        </div>
     </div>
-</div>
 <div class="form-control">
     <label for="email" class="form-label">Email</label>
     <input type="email" class="form-input" name="email" id="email">
@@ -47,11 +47,30 @@
     </label>
 </div>
 
+<div class="form-radio">
+    <div class="form-control">
+        <label class="form-label form-label-radio">
+            <input type="radio" class="radio" name="radio">
+            <span class="radio-mask"></span>
+            I am over 18 years old
+        </label>
+    </div>
+    <div class="form-control">
+        <label class="form-label form-label-radio">
+            <input type="radio" class="radio" name="radio">
+            <span class="radio-mask"></span>
+            I am under 18 years old
+        </label>
+    </div>
+
 <div class="form-actions">
     <button class="btn btn-secondary" type="reset">Reset</button>
     <button class="btn btn-primary" type="submit">Send</button>
 </div>
-</form>
+
 </div>
+
+</form>
+</main>
 </body>
 </html>

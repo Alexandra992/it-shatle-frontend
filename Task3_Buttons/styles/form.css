@@ -41,6 +41,7 @@
     height: 46px;
     padding: 6px 12px;
     outline: none;
+    box-sizing: border-box;
 }
 
 .form-input:focus {
@@ -56,6 +57,7 @@
     outline: none;
     resize: none;
     font: 1rem Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 .form-label-checkbox {
@@ -113,3 +115,98 @@
     transform: rotate(-57deg);
     width: 17px;
 }
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    border-top: 1px solid #e1e1e1;
+}
+.form-actions > * {
+    margin-left: 1rem;
+}
+
+.btn {
+    outline: none;
+    border: 1px solid transparent;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: border-color 210ms linear, background-color 210ms linear;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: palevioletred;
+    color: white
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: pink;
+    border-color: palevioletred;
+}
+
+.btn-secondary {
+    background-color: none;
+ }
+
+ .btn-secondary:hover,
+ .btn-secondary:focus {
+     background-color: rgb(219, 219, 219);
+     border-color: grey;
+ }
+
+ .form-radio {
+     padding-top: 1rem;
+     margin-top: 1rem;
+     border-top: 1px solid #e1e1e1;
+ }
+
+ .form-label-radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-mask {
+    pointer-events: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    margin-right: 0.5rem;
+    position: relative;
+    transition: border-color 270ms ease-out;
+}
+
+.radio:checked + .radio-mask {
+    border-color: palevioletred;
+   }
+
+.radio-mask:before {
+    content: "";
+    position: absolute;
+    top: 3px; left: 3px;
+    width: 16px;
+    height: 16px;
+    background-color: palevioletred;
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 270ms ease-out;
+}
+
+
+.radio:checked + .radio-mask:before {
+    opacity: 1;
+}
+
