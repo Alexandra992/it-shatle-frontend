@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: "Raleway";
+    
+}
+
+.header {
+    background-color: #eff0f2;
+    padding-top: 63px;
+    padding-left: 149px;
+    padding-right: 149px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: repeat(6, 1fr) ;
+
+}
+
+    
+.logo {
+    width: 113px;
+    height: 46px;
+    background-color: #12deb5;
+    border: 5.54px solid #170f1c;
+    text-align: center;
+    grid-column: 1 / 2;
+}
+.shopno {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    filter: drop-shadow(0 0 1px rgba(21,21,22,0.75));
+}
+
+h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    line-height: 28px;
+    color: #505050;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    filter: drop-shadow(3.517px 8.285px 5px rgba(0,0,0,0.24));
+    grid-column: 2 / 12;
+    grid-row: 3 / 4;
+}
+
+.btn {
+    grid-column: 6 / 8;
+    grid-row-start: 5;
+}
+
+
+
+
+
+
+
+.aboutUs {
+    background-color: #f8f9fa;
+}
+
+.services,
+.theySays {
+    background-color: #f9fbfb;
+}
+
+.footer {
+    background-color: #262b2e;
+}
