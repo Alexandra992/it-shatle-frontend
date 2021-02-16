@@ -61,7 +61,6 @@ section {
     padding-top: 63px;
     padding-left: 149px;
     padding-right: 149px;
-    grid-template-rows: repeat(6, 1fr) ;
     padding-bottom: 196px;
 
 }
@@ -70,10 +69,11 @@ section {
 .logo {
     width: 113px;
     height: 46px;
-    background-color: #12deb5;
+    background-color: none;
     border: 5.54px solid #170f1c;
     text-align: center;
-    grid-column: 1 / 3;
+    position: relative;
+    
 }
 
 .shopno {
@@ -84,7 +84,17 @@ section {
     font-weight: 700;
     font-family: "Montserrat";
     filter: drop-shadow(0 0 1px rgba(21,21,22,0.75));
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.symbol {
+    font-size: 20px;
+    color:  #71f6eb;
+}
+
 
 h1 {
     margin-top: 206px;
@@ -145,11 +155,11 @@ h1 {
     background-color: #262b2e;
 }
 
-.works.flex {
+.flex {
     flex-direction: column;
     align-items: center;
 }
-.images-box.grid {
+.works-box {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
@@ -168,86 +178,96 @@ h1 {
     transform:translate(-50%,-50%);
     width: 371px;
     height: 360px;
-    object-fit:cover;
-}
-
-
-.slider {
-    overflow: hidden;
-    width: 400px;
-    position: relative;
-    background-color: none;
-}
-
-
-.slider-container {
-    width: 500%;
-    display: flex;
-    transition: transform 310ms cubic-bezier(0.19, 0.11, 0.51, 1.34);
-    margin-bottom: 46px;
-}
-
-.slider-slide {
-    position: relative;
-    width: 100%;
-}
-
-
-.slider-image {
-    width: 319px;
-    height: 411px;
-    border-radius: 3px;
-    box-shadow: 2.344px 5.523px 12px rgba(20,20,21,0.17);
     object-fit: cover;
-    object-position: 50% 50%;
 }
 
-.slider-nav {
-    --gap: 5px;
-    --size: 10px;
-    position: absolute; 
-    bottom: 1rem;
+.services-box {
+    grid-template-columns: 0.85fr 0.29fr 0.8fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.services-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.services-item__big {  
+    width: 653px;
+    height: 372px;
+}
+
+.services-item__small {
+    width: 475px;
+    height: 372px;
+}
+
+.image-item {
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: calc((var(--size) * 5) + (var(--gap) * 4));
+    transform: translate(-50%,-50%);
+    object-fit: cover; 
+}
+.image-item__big {
+    width: 653px;
+    height: 372px;
 }
 
-.slider-nav__item {
-    width: var(--size);
-    height: var(--size);
-    cursor: pointer;
-    border-radius: 3px;
-    background: #d0d0d0;
+.image-item__small {
+    width: 475px;
+    height: 372px;
 }
 
-.slider [type="radio"] {
-    display: none;
+.services-box .services-item:first-child
+ {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
 }
 
-#slide-1:checked ~ .slider-nav .slider-nav__item:nth-child(1),
-#slide-2:checked ~ .slider-nav .slider-nav__item:nth-child(2),
-#slide-3:checked ~ .slider-nav .slider-nav__item:nth-child(3),
-#slide-4:checked ~ .slider-nav .slider-nav__item:nth-child(4),
-#slide-5:checked ~ .slider-nav .slider-nav__item:nth-child(5) {
-    background-color: #71f6eb;
+.services-box .services-item:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
 }
 
-#slide-2:checked ~ .slider-container {
-    transform: translateX(-20%);
+
+.services-box .services-item:nth-child(3) {
+    grid-column: 1 / 3; 
+    grid-row: 2 / 3;
 }
 
-#slide-3:checked ~ .slider-container {
-    transform: translateX(-40%);
+.services-box .services-item:nth-child(4) {
+    grid-column: 3 / 4;   
+    grid-row: 2 / 3;
 }
 
-#slide-4:checked ~ .slider-container {
-    transform: translateX(-60%);
+.services-box .services-item:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+   
+.services-box .services-item:last-child {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
 }
 
-#slide-5:checked ~ .slider-container {
-    transform: translateX(-80%);
+.team-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 441px);
+}
+    
+.team-block {
+    position: relative;
+    overflow: hidden;
+    width: 371px;
+    height: 441px;
+}
+
+.team-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover; 
+    width: 371px;
+    height: 441px;
 }
