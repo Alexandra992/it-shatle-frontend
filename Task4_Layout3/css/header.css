@@ -1,0 +1,87 @@
+.header {
+    background-color: #eff0f2;
+    padding-top: 63px;
+    padding-left: 149px;
+    padding-right: 149px;
+    padding-bottom: 196px;
+
+}
+
+    
+.logo {
+    width: 113px;
+    height: 46px;
+    background-color: none;
+    border: 5.54px solid #170f1c;
+    text-align: center;
+    position: relative;
+    
+}
+
+.shopno {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Montserrat";
+    filter: drop-shadow(0 0 1px rgba(21,21,22,0.75));
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.symbol {
+    font-size: 20px;
+    color:  #71f6eb;
+}
+
+
+h1 {
+    margin-top: 206px;
+    margin-bottom: 148px;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: #505050;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    filter: drop-shadow(3.517px 8.285px 5px rgba(0,0,0,0.24));
+   
+}
+
+.btn-wrap {
+    margin-left: auto; 
+    margin-right: auto;
+    width: 232px;
+    height: 53px;
+    
+}
+.btn {
+    
+    text-align: center;
+    width: 232px;
+    height: 53px;
+    border-radius: 2px;
+    background-color: none;
+    border: 2px solid #000000;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Montserrat";
+    opacity: 0.5;
+    transition: background-color 210ms linear, opacity 210ms linear;
+    cursor: pointer;
+    
+}
+
+.btn:hover,
+.btn:focus {
+     background-color: #71f6eb;
+     opacity: 0.75;
+ }
+
+ 
