@@ -34,6 +34,7 @@ section {
     padding-top: 130px;
     padding-bottom: 120px;
  }
+
 .grid {
     display: grid;
     gap: 15px;
@@ -47,6 +48,7 @@ section {
     flex-direction: column;
     align-items: center;
 }
+
 .upper {
     text-transform: uppercase;
     text-align: center;
@@ -57,8 +59,13 @@ section {
     opacity: 0.62;
     font-weight: 400;
     font-family: "Merriweather";
-    margin-bottom: 120px;
+    
 }
+
+.box {
+    margin-top: 120px;
+}
+
 
 .aboutUs {
     background-color: #f8f9fa;
@@ -72,6 +79,48 @@ section {
 .footer {
     background-color: #262b2e;
 }
+
+
+.textbox {
+    width: 474px;
+   
+}
+
+.about-box {
+justify-content: center;
+}
+
+
+.textbox h3,
+.about__textbox-text,
+.about__text-bold {
+     text-align: left;
+}
+
+.about__textbox-text {
+   
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Raleway";
+    opacity: 0.74;
+    margin-top: 27px;
+}
+
+.about__text-bold {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Raleway";
+    opacity: 0.75;
+    margin-top: 38px;
+    margin-bottom: 27px;
+}
+
 
 .works-box {
     grid-template-columns: repeat(3, 1fr);
@@ -100,10 +149,7 @@ section {
     grid-template-rows: repeat(3, 1fr);
 }
 
-.services-item {
-    position: relative;
-    overflow: hidden;
-}
+
 
 .services-item__big {  
     width: 653px;
@@ -115,25 +161,106 @@ section {
     height: 372px;
 }
 
-.image-item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    object-fit: cover; 
-}
-.image-item__big {
-    width: 653px;
-    height: 372px;
+.services-item__bg1 {
+    background-color: #6df6eb;
+    opacity: 0.97;
 }
 
-.image-item__small {
-    width: 475px;
-    height: 372px;
+.services-item__bg2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/img-9.png);
+}
+
+.services-item__bg3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/griego3_1x.png);
+}
+
+
+.services-item__bg4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/careers-00.png);
+}
+
+
+.services-item__bg5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/griego4_1x.png);
+}
+
+
+.services-item__bg6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/blog-3.png);
+}
+
+.services-item {
+    background-position: center;
+    background-size: cover;
+    padding-top: 131px;
+    padding-left: 70px;
+    padding-right: 80px;
+    position: relative;
+}
+
+.white {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.services-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    font-weight: 700;
+    font-family: "Merriweather";
+    margin-bottom: 27px;
+}
+
+.services-text {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Raleway";
+}
+
+.know-btn {
+    background: none;
+    border: none;
+    height: 13px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 85px;
+    font-weight: 500;
+    font-family: "Raleway";
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    bottom: 100px;
+    
+}
+
+.know-btn:focus,
+.know-btn:hover {
+    color: #6df6eb;
+    opacity: 0.7;
+}
+
+.know-btn-close {
+    width: 17px;
+    height: 17px;
+    opacity: 0.4;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 56px;
 }
 
 .services-box .services-item:first-child
  {
+    padding-top: 64px;
+    padding-right: 116px; 
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
