@@ -1,0 +1,68 @@
+.contacts {
+    background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url(../img/christmas_snow_trees-wide.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.background-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form,  
+.contacts-list {
+    width: 614px;
+    height: 460px;
+    box-shadow: 0 0 15px rgba(21,21,21,0.12);
+    background-color: #021623;
+    opacity: 0.71;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 38px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 4px 8px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Raleway";  
+    margin-bottom: 1.5rem;
+}
+
+
+
+.form-textarea {
+    resize: none;
+    margin-bottom: 2rem;
+ }
+
+
+.contacts-list {
+width: 501px;
+margin-left: 2rem;
+}
+
+.contacts-item {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Raleway";
+   
+}
+
+.map-img {
+    margin-top: 27px;
+    width: 445px;
+    height: 224px;
+    text-align: center;
+}
