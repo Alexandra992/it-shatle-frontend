@@ -1,0 +1,26 @@
+.operations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px;
+}
+
+.operations__title {
+    text-align: left;
+    width: 64%;
+}
+
+.operations__subtitle {
+    color: var(--second-text);
+    width: 64%;
+    margin: 27px 0;
+}
+
+.operations__link {
+    text-align: left;  
+    width: 64%;
+}
+
+.operations__link-item {
+    color: var(--first-text);
+}
