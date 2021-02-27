@@ -26,6 +26,7 @@
 
 .header__btn {
     width: 147px;
+    margin-bottom: 0;
 }
 
 .main__btn {
@@ -73,4 +74,14 @@ button.form__btn {
     width: 100%;
     height: 62px;
     border-radius: 6px;
+}
+
+@media screen and (min-width: 1200px) {
+
+.process__btn {
+    width: 216px;
+    
+}
+
+   
 }

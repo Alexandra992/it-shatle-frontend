@@ -52,3 +52,29 @@
 .forYou__link-item_light {
     color: var(--light-text);
 }
+
+
+@media screen and (min-width: 1200px) {
+    .forYou__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 31px;
+        margin-top: 101px;
+       
+    }
+
+    .forYou__container-block {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .forYou__textblock {
+        text-align: left;
+    }
+
+
+   
+}
