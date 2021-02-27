@@ -1,0 +1,37 @@
+.solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 20px;
+}
+
+.solution__title{
+    width: 71.5%;
+}
+
+.solution__textblock {
+    width: 67.3%;
+}
+
+.solution__img {
+    text-align: center;
+    width: 463px;
+    height: 255px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 69px;
+}
+
+.solution__img-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: fill;
+    width: 110%;
+    
+}
+
+

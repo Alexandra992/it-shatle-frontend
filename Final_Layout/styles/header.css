@@ -1,0 +1,163 @@
+header {
+    width: 100%;
+    background: var(--gradient-bg);
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.header__top {
+    width: 90.82%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 79px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    position: relative;
+    height: 58px;
+}
+
+.header-container {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.nav-control {
+    display: none;
+}
+  
+.nav-label {
+    display: block;
+    width: 44px;
+    cursor: pointer;
+    z-index: 2;
+}
+  
+.header__nav {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%);
+    max-height: 0; 
+    font-size: 0; 
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+    background-color: #37BDA6;
+  
+}
+  
+.header__nav-item {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    text-align: center;
+   
+}
+
+.header__nav-link {
+    color: var(--light-text); 
+}
+
+.nav-control:checked ~ .header__nav {
+    max-height: 600px;
+    font-size: 1rem;  
+}
+  
+.main__title {
+    text-align: center;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 57px;
+    color: var(--light-text); 
+    width: 58.7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+}
+
+.main__subtitle {
+    width: 63.9%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55px;
+    text-align: center;
+    color: #E5E5E5;
+}
+  
+.main__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.header__screen {
+    text-align: center;
+       
+}
+
+.header__screen-item {
+    width: 70%;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .header__top {
+        width: 76%;
+    }
+
+    .main__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 1rem;
+        
+    }
+
+    .header-container {
+        display: flex;
+        width: 785px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .nav-label {
+        display: none;
+    }
+
+    .header__nav {
+        position: static;
+        width: 368px;
+        transform: none;
+        height: inherit; 
+        font-size: 1rem; 
+        overflow: visible;
+        transition: none;
+        background: none;
+        max-height: none;
+          
+    }
+        
+            
+    .header__nav-list {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+        column-gap: 51px;  
+    }
+
+        
+    
+
+    
+}

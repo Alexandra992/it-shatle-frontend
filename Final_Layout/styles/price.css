@@ -1,0 +1,117 @@
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+   }
+
+.price__title {
+    width: 65%;
+}
+
+.price__textblock {
+    width: 53.7%;
+}
+
+.price__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; 
+    width: 335px;
+    height: 885px;  
+    border: 1px solid var(--border-color-contain);
+    border-radius: 10px;
+    margin: 33px 0px;
+}
+
+.price__img {
+    
+    text-align: center;
+    overflow: hidden;
+    width: 262px;
+    height: 266px;
+    position: relative;
+}
+    
+.price__img-item { 
+    width: 262px;
+    position: absolute;
+    object-fit: cover;
+    left: 50%;
+    width: 52%;
+    transform: translateX(-50%);     
+}
+
+.price__subtitle {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--second-text);
+    margin: 10px auto 30px auto;
+   
+}
+
+.price__cost {
+    width: 148px;
+    height: 66px;
+    display: grid;
+    grid-template-columns: 0.7fr 1.8fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 45px;
+}
+
+
+.price__cost-value {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 65px;
+    color: var(--secondary);
+
+}
+
+.price__cost-currency {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 33px;
+    color: var(--secondary);
+}
+
+.price__cost-month {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--second-text);
+}
+
+.price__link-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.price__link-item {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 20px;
+    color: var(--first-text)
+}
+
+.price__link-container .price__link-container:last-child {
+    margin-bottom: 0;
+}
+
+
+
